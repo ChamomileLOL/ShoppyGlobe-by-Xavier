@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# ShoppyGlobe - React E-commerce Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic e-commerce application built with React and Redux.  
+It displays a list of vegan products, allows users to add items to the cart, view product details, and manage their cart.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Product listing with vegan filter and search functionality  
+- Product detail pages with dynamic routing  
+- Add to Cart and Remove from Cart functionality using Redux  
+- Cart management with quantity controls  
+- Responsive design with CSS styling  
+- Error handling for API requests  
+- Code splitting and lazy loading for performance optimization  
+- 404 Not Found page for unknown routes  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React  
+- Redux Toolkit  
+- React Router  
+- JavaScript (ES6+)  
+- CSS  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/ChamomileLOL/ShoppyGlobe-by-Xavier.git
+   cd ShoppyGlobe-by-Xavier
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Open your browser and navigate to:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   http://localhost:3000
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+  components/
+    Header.js
+    ProductList.js
+    ProductItem.js
+    ProductDetail.js
+    Cart.js
+    CartItem.js
+    NotFound.js
+  hooks/
+    useFetchProducts.js
+  redux/
+    cartSlice.js
+    store.js
+  assets/
+    images/
+  App.js
+  index.js
+  App.css
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Usage
+Browse products on the Home page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Search and filter vegan products.
 
-### Analyzing the Bundle Size
+Click “Add to Cart” to add products to your cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+View cart contents and modify quantities.
 
-### Making a Progressive Web App
+Navigate to product detail pages for more info.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Use the navigation menu to access different pages.
 
-### Advanced Configuration
+## Notes
+Products are fetched from https://dummyjson.com/products.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Cart state is managed globally using Redux.
 
-### Deployment
+Only vegan products are displayed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
+Xavier Moorkattil
+Email: xavier.siby777@gmail.com
+Date: 5th May 2025
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
